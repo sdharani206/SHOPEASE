@@ -13,7 +13,7 @@ app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:5173" }));
 // Lets us read JSON sent in request bodies (needed later for login, orders, etc.)
 app.use(express.json());
 
-// Step 3 test route
+// Basic test route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to the ShopEase API!" });
 });
